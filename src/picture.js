@@ -1,6 +1,6 @@
 import React from "react";
 export default function Picture(props){
-  const {media} = props
+  const {picture} = props
   // console.log(media.url)
   const myStyle ={
     width: "920px", 
@@ -8,6 +8,6 @@ export default function Picture(props){
     border: '1px solid green',
   }
   return (
-  <iframe style={myStyle} src={media.url}></iframe>
+  <img style={myStyle} src={picture.url}/>
   );
 };

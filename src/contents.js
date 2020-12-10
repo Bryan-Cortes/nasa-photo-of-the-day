@@ -1,4 +1,5 @@
 import React from "react";
+
 export default function Contents(props){
   const {content , date} = props
   const myStyle ={

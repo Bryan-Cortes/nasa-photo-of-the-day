@@ -8,6 +8,11 @@ export default function Title(props){
     
   }
   
-  return (<h2 style={myStyle}> {title.title}</h2>)
-  
+  return (
+    
+    <div>
+      <h1 style={myStyle}>NASA Photo Of The Day</h1>
+      <h2 style={myStyle}> {title.title}</h2>
+    </div>
+  )
 };

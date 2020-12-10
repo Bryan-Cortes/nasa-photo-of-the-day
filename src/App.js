@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from 'axios'
-import Title from './title.js'
-import Picture from './picture.js'
-import Content from './contents.js'
+import Title from './title'
+import ShowMedia from "./ShowMedia";
+import Contents from './contents'
 
 
 
@@ -35,20 +35,6 @@ function App() {
     fetchNasaData();
   }, []);
 
-  
-
-  
-
-
-
-
-
-
-
-
-
-
-
 
   return (
     <div className="App">
@@ -57,8 +43,8 @@ function App() {
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p> */}
       <Title title={nasaData}/> 
-      <Picture media={nasaData}/>
-      <Content content={nasaData} date={nasaData}/>
+      <ShowMedia nasaData={nasaData}/>
+      <Contents content={nasaData} date={nasaData}/>
     </div>
   );
 }
