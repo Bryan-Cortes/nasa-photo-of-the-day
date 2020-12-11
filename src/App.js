@@ -41,7 +41,7 @@ function App() {
     <AppContainer className="App" >
       <Title title={nasaData}/> 
       <ShowMedia nasaData={nasaData}/>
-      <Contents content={nasaData} date={nasaData}/>
+      <Contents content={nasaData} date={nasaData} title={nasaData}/>
     </AppContainer>
   );
 }
@@ -50,5 +50,7 @@ export default App;
 
 
 const AppContainer = styled.body`
-  background-color: #282c34;
+  background-color: #1a1c20;
+  margin: 0 10%;
+  font-family: 'sans-serif';
 `

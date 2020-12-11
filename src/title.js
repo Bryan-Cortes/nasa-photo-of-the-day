@@ -11,7 +11,6 @@ export default function Title(props){
       <h1>
         NASA Photo Of The Day
       </h1>
-      <h2>{title.title}</h2>
       </StyledTitles>
     </div>
   )
@@ -20,15 +19,9 @@ export default function Title(props){
 const StyledTitles = styled.div`
 
   h1 {
-  font-size: 2.5rem;
+  font-size: 3.3rem;
   color: ${(props) =>  props.theme.primaryColor};
-
+  font-family: 'arial';
   }
 
-  h2 {
-
-  font-size: 2.5rem;
-  color: green;
-
-  }
 `

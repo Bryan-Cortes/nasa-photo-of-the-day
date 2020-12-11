@@ -14,5 +14,5 @@ export default function BodyContent(props) {
 }
 
 const MediaContainer = styled.div`
-  width: 100%;
+  
 `

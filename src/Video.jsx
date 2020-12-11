@@ -5,14 +5,13 @@ import styled from "styled-components"
 export default function Video(props) {
   const {video} = props
   return (
-    <VideoDiv>
-      <iframe src={video.url}></iframe>
-    </VideoDiv>
+    <StyledVideo src={video.url}>
+    
+    </StyledVideo>
   )
 }
 
-const VideoDiv = styled.div`
-  width: 920px; 
-  height: 440px;
-  border: 1px solid green;
+const StyledVideo = styled.iframe`
+  height: 50%;
+  width: 80%;
 `

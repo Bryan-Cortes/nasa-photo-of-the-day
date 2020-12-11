@@ -4,13 +4,19 @@ export default function Picture(props){
   const {picture} = props
 
   return (
-  <ImageDiv>
-    <img src={picture.url}/>
-  </ImageDiv>
+  <StyledImage src={picture.url}>
+    
+  </StyledImage>
   );
 };
 
 
-const ImageDiv = styled.div`
-
+const StyledImage = styled.img`
+  width: 45%;
+  border-radius: 10px;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+  }
+  transition: all 0.5s ease-in-out;
 `
