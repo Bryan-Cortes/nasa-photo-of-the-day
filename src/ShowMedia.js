@@ -1,21 +1,18 @@
 import React from 'react'
 import Picture from './picture'
 import Video from './Video'
+import styled from "styled-components"
 
 export default function BodyContent(props) {
   const {nasaData} = props
   return (
-    <div>
-      
+
+    <MediaContainer>
       {nasaData["media_type"] === 'image'? <Picture picture={nasaData}/> : <Video video={nasaData}/>}
-      
-    </div>
+    </MediaContainer>
   )
 }
 
-
-// if(nasaData === img){
-//   <Picture picture={nasaData}/>
-// } else{
-//   <Video video={nasaData}/>
-// }
+const MediaContainer = styled.div`
+  width: 100%;
+`

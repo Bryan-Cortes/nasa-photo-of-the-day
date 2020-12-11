@@ -4,7 +4,7 @@ import axios from 'axios'
 import Title from './title'
 import ShowMedia from "./ShowMedia";
 import Contents from './contents'
-
+import styled from "styled-components"
 
 
 const URL = 'https://api.nasa.gov/planetary/apod';
@@ -15,7 +15,7 @@ const API_KEY='?api_key=0mi6eSYgNcmFw9h8zjAb0O926BYVBPVlJejOQbnw';
 
 
 function App() {
-
+  
   // State setters
   const [nasaData, setNasaData] =useState({})
 
@@ -37,16 +37,18 @@ function App() {
 
 
   return (
-    <div className="App">
-      {/* <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p> */}
+
+    <AppContainer className="App" >
       <Title title={nasaData}/> 
       <ShowMedia nasaData={nasaData}/>
       <Contents content={nasaData} date={nasaData}/>
-    </div>
+    </AppContainer>
   );
 }
 
 export default App;
+
+
+const AppContainer = styled.body`
+  background-color: #282c34;
+`
